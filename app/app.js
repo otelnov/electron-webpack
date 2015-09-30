@@ -25,4 +25,7 @@ require('./components/common/layout.js')(ngModule);
 require('./components/main/main.js')(ngModule);
 require('./components/hello/hello.js')(ngModule);
 
+let fs = require('fs');
+console.log(fs.readdirSync('./'));
+
 angular.bootstrap(document, ['app']);

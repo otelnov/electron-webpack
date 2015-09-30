@@ -24,8 +24,7 @@ var config = {
       ON_DEV: process.env.NODE_ENV !== 'production',
       ON_PROD: process.env.NODE_ENV === 'production'
     }),
-    new webpack.optimize.CommonsChunkPlugin('build', 'build.js'),
-    new webpack.IgnorePlugin(new RegExp("^(fs)$"))
+    new webpack.optimize.CommonsChunkPlugin('build', 'build.js')
   ],
 
   module: {
